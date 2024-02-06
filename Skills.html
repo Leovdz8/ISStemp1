@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .sty1 {
+                background-image: conic-gradient(black , #0C0404, black, black , #0C090A);
+            }
+            .sty2{
+                background-color:#8be9fd;
+                text-align: center;
+            }
+            .sty3{
+                background-color: #282a36;
+                list-style-type: none;
+                margin: 0;
+                padding:0;
+                overflow: hidden;
+                font-weight: bold;
+            }
+            .li1 {
+                float: left;
+                padding: 1% 2%;
+            }
+            .hovering{
+                color: white;
+                text-align: center;
+                background-color: #282a36;
+                width: 100%;
+            }
+            .sty4{
+                background-color: #bd93f9;
+                text-align: center;
+                color: lightblue;
+                font-weight: bold;
+            }
+            .sty5{
+                font-size: 145%;
+                color: yellow;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .hovering:hover{
+                background-color: orange;
+                transition: 0.4s;
+            }
+            .button_features{
+                background-color: brown;
+                border: 3px solid black;
+                color: black;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 200%;
+                font-family:monospace;
+            }
+            .button_features:hover{
+                background-color: black;
+                color: white;
+                transition-duration: 0.4s;
+            }
+            .Navbar{
+                display: flex;
+                flex-direction: row;
+            }
+            .sty6{
+                color: white;
+                text-decoration: none;
+            }
+            .sty7{
+                font-size: 145%;
+                color: yellow;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Nimbus Mono PS';
+            }
+            .active{
+                text-align: center;
+                background-color: green;
+                width: 100%;
+                color: white;
+            }
+            .image{
+                float: left;
+                width: 20%;
+                float: left;
+                border: 7px solid cyan;
+            }
+            .light_mode{
+                background-image: conic-gradient(cyan , skyblue, darkblue, blue , lightblue);
+            }
+            .paralight{
+                font-size: 145%;
+                color: black;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Nimbus Mono PS' ;
+            }
+            .image_mode{
+                float: left;
+                width: 20%;
+                float: left;
+                border: 7px solid black;
+                margin: 0;
+                padding: 0;
+            }
+            .T_head{
+                font-size: 150%;
+                color: yellow;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .Thead_light{
+                font-size: 150%;
+                color: black;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .button_light{
+                background-color: white;
+                border: 3px solid orange;
+                color: black;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 200%;
+                font-family:monospace;   
+            }
+            .button_light:hover{
+                background-color: orange;
+                color: cyan;
+                transition-duration: 0.4s;
+            }
+            .sty8{
+                color: white;
+                text-align: center;
+                font-size: 170%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty9{
+                color: white;
+                text-align: left;
+                font-size: 157.5%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty8-light{
+                color: black;
+                text-align: center;
+                font-size: 170%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty9-light{
+                color: white;
+                text-align: left;
+                font-size: 157.5%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .link{
+                font-size: 150%;
+                font-family:'Times New Roman', Times, serif;
+                color: white;
+            }
+        </style>
+            <h1 class="sty3">
+            </h1>
+            <h6 class="sty3">
+            </h6>
+    </head>
+    <body class="sty1">
+        <ul class="sty3">
+            <div class="Navbar">
+            <li class="hovering li1"><a class="sty6" href="about_me.html">About Me</a></li>
+            <li class="hovering li1"><a class="sty6" href="education.html">Educational Background</a></li>
+            <li class="hovering li1"><a class="sty6" href="acheivements.html">Acheivements</a></li>
+            <li class="active li1"><a class="sty6" href="Skills.html">Skills</a></li>
+            <li class="hovering li1"><a class="sty6" href="blog.html">Blog</a></li>
+           </div>
+        </ul>
+        <p class="sty8" id="Head">
+            Here are some of my skills:
+        </p>
+        <ul>
+            <li class="sty9" id="l1">Some of the programming and scripting languages I've learnt: C , Python , C++ , shellscripting in bash</li><br>
+            <li class="sty9" id="l2">A Curious Learner</li><br>
+            <li class="sty9" id="l3">Vocals in Music</li><br>
+        </ul>
+        <a href="Resume-1.pdf" class="link" target="_blank">Link to my Resume</a><br><br><br><br><br>
+        <button class="button_features" id="button2" onclick="TOGGLE()">Toggle(L&D Modes)</button>
+            <script>
+                function TOGGLE()
+                {
+                    var v1 = document.body;
+                    v1.classList.toggle("light_mode");
+                    var v2 = document.getElementById("Head");
+                    v2.classList.toggle("sty8-light");
+                    var v3 = document.getElementById("l1");
+                    v3.classList.toggle("sty9-light");
+                    var v4 = document.getElementById("l2");
+                    v4.classList.toggle("sty9-light");
+                    var v5 = document.getElementById("l3");
+                    v5.classList.toggle("sty9-light");
+                    var v6 = document.getElementById("button2");
+                    v6.classList.toggle("button_light");
+                }
+            </script>
+    </body>
+    </html>

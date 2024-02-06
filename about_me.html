@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .sty1 {
+                background-image: conic-gradient(black , #0C0404, black, black , #0C090A);
+            }
+            .sty2{
+                background-color:#8be9fd;
+                text-align: center;
+            }
+            .sty3{
+                background-color: #282a36;
+                list-style-type: none;
+                margin: 0;
+                padding:0;
+                overflow: hidden;
+                font-weight: bold;
+            }
+            li {
+                float: left;
+                padding: 1% 2%;
+            }
+            .hovering{
+                color: white;
+                text-align: center;
+                background-color: #282a36;
+                width: 100%;
+            }
+            .sty4{
+                background-color: #bd93f9;
+                text-align: center;
+                color: lightblue;
+                font-weight: bold;
+            }
+            .sty5{
+                font-size: 145%;
+                color: yellow;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .hovering:hover{
+                background-color: orange;
+                transition: 0.4s;
+            }
+            .button_features{
+                background-color: brown;
+                border: 3px solid black;
+                color: black;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 200%;
+                font-family:monospace;
+            }
+            .button_features:hover{
+                background-color: black;
+                color: white;
+                transition-duration: 0.4s;
+            }
+            .Navbar{
+                display: flex;
+                flex-direction: row;
+            }
+            .sty6{
+                color: white;
+                text-decoration: none;
+            }
+            .sty7{
+                font-size: 145%;
+                color: yellow;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Nimbus Mono PS';
+            }
+            .active{
+                text-align: center;
+                background-color: green;
+                width: 100%;
+                color: white;
+            }
+            .image{
+                float: left;
+                width: 20%;
+                float: left;
+                border: 7px solid cyan;
+            }
+            .light_mode{
+                background-image: linear-gradient(cyan , skyblue, darkblue, blue , lightblue);
+            }
+            .paralight{
+                font-size: 145%;
+                color: black;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Nimbus Mono PS' ;
+            }
+            .image_mode{
+                float: left;
+                width: 20%;
+                float: left;
+                border: 7px solid black;
+                margin: 0;
+                padding: 0;
+            }
+            .T_head{
+                font-size: 150%;
+                color: yellow;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .Thead_light{
+                font-size: 150%;
+                color: black;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .button_light{
+                background-color: white;
+                border: 3px solid orange;
+                color: black;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 200%;
+                font-family:monospace;   
+            }
+            .button_light:hover{
+                background-color: orange;
+                color: cyan;
+                transition-duration: 0.4s;
+            }
+        </style>
+            <h1 class="sty3">
+            </h1>
+            <h6 class="sty3">
+            </h6>
+    </head>
+    <body class="sty1" >
+            <ul class="sty3">
+                <div class="Navbar">
+                <li class="active"><a class="sty6" href="about_me.html">About Me</a></li>
+                <li class="hovering"><a class="sty6" href="education.html">Educational Background</a></li>
+                <li class="hovering"><a class="sty6" href="acheivements.html">Acheivements</a></li>
+                <li class="hovering"><a class="sty6" href="Skills.html">Skills</a></li>
+                <li class="hovering"><a class="sty6" href="blog.html">Blog</a></li>
+               </div>
+            </ul>
+            <br>
+            <img class="image" src="profile_pic.jpg" id="IMAGE">
+                <p class="sty7" id="Thead1">
+                    Before starting off with the introduction, I had a hard time writing this page , had no idea about what content would
+                    come under this particular section , and yet wanted to cover up some decent amount of this page.... Wait,
+                    Never mind , I guess its the same situation with all the sections of this website.
+                    So getting started with the introduction.....<br>
+                </p>
+            <p class="T_head" id="Thead"><U>About Me</U></p>
+                <p class="sty7" id="para">
+                     I'm Shreyas Kasture , currently an Undergraduate ,in my first year, at IIIT Hyderabad.<br>
+                Jumping straight to my hobbies, I'm very fond of the mythological world.<br> So in my free time I'm mostly browsing through
+                various resources and texts available online.<br> The most common mythologies which really drew my attention are Indian , Greek , 
+                Cherokee , Roman and Norse. All these mythos have a unique essence , which makes them special.<br>
+                So even though Karma triumphs over everything in each of these mythos , yet they seem very different from each 
+                other.And....I guess that's it... <br>
+                Don't want to turn this page about mythology rather than myself.
+            </p>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <button class="button_features" id="button1" onclick="TOGGLE()">Toggle(L&D Modes)</button>
+            <script>
+                function TOGGLE()
+                {
+                    var v1 = document.body;
+                    v1.classList.toggle("light_mode");
+                    var v2 = document.getElementById("para");
+                    v2.classList.toggle("paralight");
+                    var v3 = document.getElementById("IMAGE");
+                    v3.classList.toggle("image_mode");
+                    var v4 = document.getElementById("Thead");
+                    v4.classList.toggle("Thead_light");
+                    var v5 = document.getElementById("Thead1");
+                    v5.classList.toggle("paralight");
+                    var v6 = document.getElementById("button1");
+                    v6.classList.toggle("button_light");
+                }
+            </script>
+    </body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/fc9f34132f.js" crossorigin="anonymous"></script>
+        <style>
+            .sty1 {
+                background-image: conic-gradient(black , #0C0404, black, black , #0C090A);
+            }
+            .sty2{
+                background-color:#8be9fd;
+                text-align: center;
+            }
+            .sty3{
+                background-color: #282a36;
+                list-style-type: none;
+                margin: 0;
+                padding:0;
+                overflow: hidden;
+                font-weight: bold;
+            }
+            li {
+                float: left;
+                padding: 1% 2%;
+            }
+            .hovering{
+                color: white;
+                text-align: center;
+                background-color: #282a36;
+                width: 100%;
+            }
+            .sty4{
+                background-color: white;
+                text-align: center;
+                width: 100%;
+                text-decoration: none;
+            }
+            .sty5{
+                font-size: 145%;
+                color: yellow;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .hovering:hover{
+                background-color: orange;
+                transition: 0.4s;
+            }
+            .button_features{
+                background-color: brown;
+                border: 3px solid black;
+                color: black;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 200%;
+                font-family:monospace;
+            }
+            .button_features:hover{
+                background-color: black;
+                color: white;
+                transition-duration: 0.4s;
+            }
+            .Navbar{
+                display: flex;
+                flex-direction: row;
+            }
+            .sty6{
+                display: flex;
+                color: white;
+                border: 3px solid white;
+                text-decoration: none;
+                font-size: 150%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty62{
+                display: flex;
+                color: white;
+                font-size: 140%;
+                justify-content: center;
+                text-decoration: none;
+            }
+            .sty7{
+                font-size: 145%;
+                color: orange;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+                border: 3px solid white;
+            }
+            .active{
+                text-align: center;
+                background-color: green;
+                width: 100%;
+                color: white;
+            }
+            .image{
+                float: left;
+                width: 20%;
+                float: left;
+                border: 7px solid cyan;
+            }
+            .light_mode{
+                background-image: conic-gradient(cyan , skyblue, darkblue, blue , lightblue);
+            }
+            .paralight{
+                display: flex;
+                font-size: 145%;
+                color: white;
+                justify-content: center;
+                font-weight: bold;
+                font-family:'Nimbus Mono PS' ;
+                border: 5px solid black;
+            }
+            .image_mode{
+                float: left;
+                width: 20%;
+                float: left;
+                border: 7px solid black;
+                margin: 0;
+                padding: 0;
+            }
+            .T_head{
+                font-size: 150%;
+                color: yellow;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .Thead_light{
+                font-size: 150%;
+                color: black;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .button_light{
+                background-color: white;
+                border: 3px solid orange;
+                color: black;
+                text-align:center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 200%;
+                font-family:monospace;   
+            }
+            .button_light:hover{
+                background-color: orange;
+                color: cyan;
+                transition-duration: 0.4s;
+            }
+            .container_socials{
+                display: flex;
+                justify-content: space-between;
+                background-color: white;
+                border: 7px solid cyan;
+                position: absolute;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+            }
+            .sty4:hover{
+                background-color: orange;
+                transition-duration: 0.4s;
+            }
+            .sty4-light{
+                background-color: black;
+                text-align: center;
+                width: 100%;
+                text-decoration: none;
+            }
+            .sty4-light:hover{
+                background-color:white;
+                transition-duration: 0.4s;
+            }
+            .sty8{
+                color: cyan;
+                text-align: center;
+                font-size: 170%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty9{
+                display: flex;
+                border: 5px solid white;
+                color: yellow;
+                text-align: center;
+                font-size: 157.5%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty8-light{
+                color: black;
+                text-align: center;
+                font-size: 170%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty9-light{
+                display: flex;
+                border: 5px solid cyan;
+                color: white;
+                text-align: center;
+                font-size: 157.5%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty10{
+                color: white;
+                font-size: 150%;
+                font-family:'Times New Roman', Times, serif;
+            }
+            .sty7-light{
+                font-size: 145%;
+                color: black;
+                text-align: center;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+                border: 3px solid cyan;
+            }
+        </style>
+            <h1 class="sty3">
+            </h1>
+            <h6 class="sty3">
+            </h6>
+            <link rel="stylesheet" href="font-awesome.css">
+    </head>
+    <body class="sty1">
+        <p class="sty8" id="B_head">Blog 2</p>
+        <p class="sty9" id="blog">
+            Wandering down the path to the pond had become a daily routine. Even when the weather wasn't cooperating like today with the wind and rain, Jerry still took the morning stroll down the path until he reached the pond. Although there didn't seem to be a particular reason Jerry did this to anyone looking in from the outside, those who knew him well knew exactly what was going on. It could all be traced back to a specific incident that happened exactly 5 years previously.
+            They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind. Everything was thrown into the car and they sped off. Thirty minutes later they were safe and that was when it dawned on them that they had forgotten the most important thing of all.
+            The alarm went off at exactly 6:00 AM as it had every morning for the past five years. Barbara began her morning and was ready to eat breakfast by 7:00 AM. The day appeared to be as normal as any other, but that was about to change. In fact, it was going to change at exactly 7:23 AM.
+            The kids were loud. They were way too loud for Jerry, especially since this was a four-hour flight. The parents didn't seem to be able, or simply didn't want, to control them. They were yelling and fighting among themselves and it was impossible for any of the passengers to concentrate or rest. He thought about politely tapping on the parents' shoulders and asking them to try and get their kids under a bit more control, but before he did he came up with a better idea. Sure, it was a bit sinister, and he'd probably end up in a lot of trouble, but he really didn't care at that point.
+        </p>
+        <br>
+        <button onclick="Increment()"><i class="fa-regular fa-thumbs-up fa-4x" id="like"></i></button>
+        <p style="color: white">Like Count</p>
+        <p id="num_likes" style="color: white"></p>
+        <p class="sty10">
+            <U>Comments:</U>
+        </p>
+        <p class="sty7" id="comments">
+            Alex_15: Can't wait to share this with my friends. It's a must-read for everyone!<br>
+            The_gunner: I had a similar experience, and your advice resonates with me. Thanks for the guidance!<br>
+            coder_24/7: I really love your edits , can you share what all tools you used?<br>
+            Some_old_dude: I don't get it why people like this!! Like , does it even make sense???
+        </p>
+            <button class="button_features" id="button2" onclick="TOGGLE()">Toggle(L&D Modes)</button>
+            <br><br>
+            <a href="about_me.html"><button class="button_features" id="button3">Back to about me</button></a>
+            <script>
+                var v = 1000*Math.random();
+                var g = Math.round(v);
+                var count = 0;
+                function TOGGLE()
+                {
+                    var v1 = document.body;
+                    v1.classList.toggle("light_mode");
+                    var v6 = document.getElementById("button2");
+                    v6.classList.toggle("button_light");
+                    var v7 = document.getElementById("B_head");
+                    v7.classList.toggle("sty8-light");
+                    var v8 = document.getElementById("blog");
+                    v8.classList.toggle("sty9-light");
+                    var v10 = document.getElementById("comments");
+                    v10.classList.toggle("sty7-light");
+                    var v11 = document.getElementById("button3");
+                    v11.classList.toggle("button_light");
+                }
+                function Increment()
+                {
+                   count++;
+                   if(count%2==1)
+                   {
+                      g++;
+                      document.getElementById("num_likes").innerHTML=g;
+                   }
+                   else
+                   {
+                      g--;
+                      document.getElementById("num_likes").innerHTML=g;
+                   }
+                   var s = document.getElementById("like");
+                   s.classList.toggle("fa-solid");
+                }
+                function Show_likes()
+                {
+                   document.getElementById("num_likes").innerHTML=g;
+                }
+                if(count==0)
+                Show_likes();
+            </script>
+    </body>
+    </html>
